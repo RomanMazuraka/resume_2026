@@ -13,6 +13,37 @@
     />
 
     <link rel="stylesheet" href="css/styles.css" />
+
+    <!-- PRINT STYLE -->
+    <style>
+      @media print {
+        body {
+          margin: 0;
+          padding: 0;
+        }
+
+        .wrapper {
+          display: block;
+        }
+
+        .sidebar {
+          width: 100%;
+        }
+
+        img {
+          max-width: 150px;
+        }
+
+        a {
+          color: black;
+          text-decoration: none;
+        }
+
+        .my-projects-container {
+          display: none;
+        }
+      }
+    </style>
   </head>
 
   <body>
@@ -23,37 +54,11 @@
           
           <!-- My info -->
           <div class="my-info">
-            <h2 class="my-profession">Senior Specialist</h2>
             <h1 class="my-name">Roman Mazuraka</h1>
             <p class="my-descr">
               Zkušený pracovník ve výrobě a logistice se zkušeností s vedením týmu a řízením směny.
               Pravidelně zastupuji Team Leadera a zajišťuji chod operací.
             </p>
-          </div>
-
-          <!-- Projects -->
-          <div class="my-projects-container">
-            <h3 class="my-projects-title">Projects</h3>
-            <ol class="my-projects-list">
-              <li class="my-project-item">
-                <a class="my-project-item-link" href="https://co11aps.github.io/FocusFrame20/" target="_blank">
-                  https://co11aps.github.io/FocusFrame20/
-                </a>
-                <span class="my-project-item-tech">[ HTML5, CSS3 ]</span>
-              </li>
-              <li class="my-project-item">
-                <a class="my-project-item-link" href="https://romanmazuraka.github.io/goit-markup-hw-06/index.html" target="_blank">
-                  https://romanmazuraka.github.io/goit-markup-hw-06/index.html
-                </a>
-                <span class="my-project-item-tech">[ HTML5, CSS3 ]</span>
-              </li>
-              <li class="my-project-item">
-                <a class="my-project-item-link" href="https://romanmazuraka.github.io/goit-js-hw-07/index.html" target="_blank">
-                  https://romanmazuraka.github.io/goit-js-hw-07/index.html
-                </a>
-                <span class="my-project-item-tech">[ JavaScript ]</span>
-              </li>
-            </ol>
           </div>
 
           <!-- Work experience -->
@@ -71,15 +76,14 @@
               </p>
               <ul class="work-experiense-duties-list">
                 <li>Koordinace balení, demontáže a expedice výrobků</li>
-                <li>Pravidelné zastupování Team Leadera a organizace práce týmu (cca 8 pracovníků)</li>
+                <li>Pravidelné zastupování Team Leadera a organizace práce týmu</li>
                 <li>Hodnocení výkonu zaměstnanců a podklady pro bonusy</li>
-                <li>Zaškolování nových zaměstnanců včetně komunikace v angličtině</li>
-                <li>Plánování a správa palet (objednávky, kontrola, evidence)</li>
-                <li>Práce se systémem QAD a skenery</li>
-                <li>Práce s mostovým jeřábem a manipulační technikou</li>
-                <li>Kontrola kvality a dodržování termínů</li>
-                <li>Administrativa: Excel (tabulky, evidence dat), Outlook, Teams</li>
-                <li>Pokročilá práce s kancelářskou technikou (tiskárny, skenery)</li>
+                <li>Zaškolování nových zaměstnanců včetně angličtiny</li>
+                <li>Plánování a správa palet</li>
+                <li>Práce se systémem QAD</li>
+                <li>Práce s mostovým jeřábem a technikou</li>
+                <li>Kontrola kvality</li>
+                <li>Administrativa: Excel, Outlook, Teams</li>
               </ul>
             </div>
 
@@ -93,11 +97,10 @@
                 <span class="work-experiense-period-separator">|</span> Kiev
               </p>
               <ul class="work-experiense-duties-list">
-                <li>Organizace každodenního provozu internetového obchodu</li>
-                <li>Vedení týmu a rozdělování práce</li>
-                <li>Kontrola objednávek a koordinace expedice</li>
-                <li>Komunikace se zákazníky a dodavateli</li>
-                <li>Zajištění plynulého chodu provozu</li>
+                <li>Organizace provozu e-shopu</li>
+                <li>Vedení týmu</li>
+                <li>Kontrola objednávek</li>
+                <li>Komunikace se zákazníky</li>
               </ul>
             </div>
 
@@ -111,10 +114,9 @@
                 <span class="work-experiense-period-separator">|</span> Kiev
               </p>
               <ul class="work-experiense-duties-list">
-                <li>Zodpovědnost za prodejní výsledky v regionu</li>
-                <li>Péče o zákazníky a rozvoj obchodních vztahů</li>
-                <li>Plánování prodejních aktivit</li>
-                <li>Práce se systémem SAP</li>
+                <li>Prodejní výsledky v regionu</li>
+                <li>Péče o zákazníky</li>
+                <li>Plánování aktivit</li>
               </ul>
             </div>
           </div>
@@ -126,7 +128,6 @@
             <p class="education-faculty">Tourism and Hotel & Restaurant Business</p>
             <p class="education-period">
               09/2008 - 06/2012
-              <span class="education-period-separator">|</span> Ukraine
             </p>
           </div>
         </div>
@@ -136,17 +137,12 @@
           <img src="img/Roman.jpg" alt="My foto" width="370" />
 
           <div class="sidebar-content">
+            
             <!-- Contacts -->
             <div class="contacts-conteiner">
               <h3 class="contacts-title">Contacts</h3>
-              <p class="contacts-item">
-                <span class="contacts-type">C:</span>
-                <a class="contacts-link" href="tel:+420775230185">+420 775 230 185</a>
-              </p>
-              <p class="contacts-item">
-                <span class="contacts-type">E:</span>
-                <a class="contacts-link" href="mailto:r.mazuraka@gmail.com">r.mazuraka@gmail.com</a>
-              </p>
+              <p>+420 775 230 185</p>
+              <p>r.mazuraka@gmail.com</p>
             </div>
 
             <!-- Tech Skills -->
@@ -157,7 +153,9 @@
                 <li>CSS3</li>
                 <li>Git</li>
                 <li>Webpack</li>
-                <li>JavaScript (základy)</li>
+                <li>JavaScript</li>
+                <li>CAD systems</li>
+                <li>Microsoft Office (Excel, Outlook, Teams)</li>
               </ul>
             </div>
 
@@ -173,6 +171,7 @@
                 <li>Teamwork</li>
               </ul>
             </div>
+
           </div>
         </aside>
 
