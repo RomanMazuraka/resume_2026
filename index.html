@@ -1,70 +1,195 @@
-<!-- Tech Skills -->
-<div class="skills-conteiner">
-  <h3 class="skills-title">Tech Skills</h3>
-  <ul class="skills-list">
-    <li>HTML5</li>
-    <li>CSS3</li>
-    <li>Git</li>
-    <li>Webpack</li>
-    <li>JavaScript</li>
-    <li>QAD (Green QAD)</li>
-    <li>Microsoft Office (Excel, Outlook, Teams)</li>
-  </ul>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My resume</title>
 
-<!-- Work experience (update middle parts only) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
 
-<!-- Bodymarket -->
-<div class="work-experiense-container">
-  <h4 class="work-experiense-company">
-    Senior Sales Specialist / Vedoucí prodejny (e-shop)
-    <span class="company-name">Bodymarket.ua</span>
-  </h4>
-  <p class="work-experiense-period">
-    od 08.2018-do 08.2019
-    <span class="work-experiense-period-separator">|</span> Kiev
-  </p>
-  <ul class="work-experiense-duties-list">
-    <li>Organizace každodenního provozu internetového obchodu</li>
-    <li>Vedení týmu a rozdělování práce</li>
-    <li>Kontrola objednávek a koordinace expedice</li>
-    <li>Komunikace se zákazníky a dodavateli</li>
-    <li>Řešení reklamací a zákaznických požadavků</li>
-    <li>Optimalizace procesů expedice a balení</li>
-    <li>Kontrola kvality služeb a zákaznické spokojenosti</li>
-    <li>Zajištění plynulého chodu provozu</li>
-  </ul>
-</div>
+    <link rel="stylesheet" href="css/styles.css" />
 
-<!-- Coca-Cola -->
-<div class="work-experiense-container">
-  <h4 class="work-experiense-company">
-    Senior Sales Specialist
-    <span class="company-name">Coca-Cola</span>
-  </h4>
-  <p class="work-experiense-period">
-    03/2013 - 08/2018
-    <span class="work-experiense-period-separator">|</span> Kiev
-  </p>
-  <ul class="work-experiense-duties-list">
-    <li>Zodpovědnost za prodejní výsledky v regionu</li>
-    <li>Péče o zákazníky a rozvoj obchodních vztahů</li>
-    <li>Plánování a realizace prodejních aktivit</li>
-    <li>Práce se systémem SAP</li>
-    <li>Analýza prodejních dat a reporting</li>
-    <li>Spolupráce s obchodními zástupci a partnery</li>
-    <li>Řešení obchodních a logistických problémů</li>
-  </ul>
-</div>
+    <!-- PRINT STYLE -->
+    <style>
+      @media print {
+        body {
+          margin: 0;
+          padding: 0;
+        }
 
-<!-- Education -->
-<div class="education-container">
-  <h3 class="education-title">Education</h3>
-  <p class="education-university">East European University</p>
-  <p class="education-faculty">
-    Vysokoškolské vzdělání – Tourism and Hotel & Restaurant Business
-  </p>
-  <p class="education-period">
-    09/2008 - 06/2012
-  </p>
-</div>
+        .wrapper {
+          display: block;
+        }
+
+        .sidebar {
+          width: 100%;
+        }
+
+        img {
+          max-width: 150px;
+        }
+
+        a {
+          color: black;
+          text-decoration: none;
+        }
+
+        .my-projects-container {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div>
+      <div class="wrapper">
+
+        <!-- MAIN -->
+        <div class="main-content">
+
+          <!-- INFO -->
+          <div class="my-info">
+            <h1 class="my-name">Roman Mazuraka</h1>
+            <p class="my-descr">
+              Zkušený pracovník ve výrobě a logistice se zkušeností s vedením týmu a řízením směny.
+              Pravidelně zastupuji Team Leadera a zajišťuji chod operací.
+            </p>
+          </div>
+
+          <!-- WORK -->
+          <div class="work-experiense-section">
+            <h3 class="work-experiense-title">Professional Experience</h3>
+
+            <!-- Kompan -->
+            <div class="work-experiense-container">
+              <h4 class="work-experiense-company">
+                Senior Specialist / Zástupce Team Leadera
+                <span class="company-name">Kompan Czech Republic</span>
+              </h4>
+              <p class="work-experiense-period">
+                November 2021 - up to now | Brno
+              </p>
+              <ul class="work-experiense-duties-list">
+                <li>Koordinace balení, demontáže a expedice výrobků</li>
+                <li>Pravidelné zastupování Team Leadera a organizace práce týmu</li>
+                <li>Hodnocení výkonu zaměstnanců a podklady pro bonusy</li>
+                <li>Zaškolování nových zaměstnanců včetně angličtiny</li>
+                <li>Plánování a správa palet (objednávky, kontrola, evidence)</li>
+                <li>Práce se systémem QAD (Green QAD)</li>
+                <li>Práce s mostovým jeřábem a manipulační technikou</li>
+                <li>Kontrola kvality a dodržování termínů</li>
+                <li>Administrativa: Excel (tabulky), Outlook, Teams</li>
+                <li>Pokročilá práce s kancelářskou technikou</li>
+              </ul>
+            </div>
+
+            <!-- Bodymarket -->
+            <div class="work-experiense-container">
+              <h4 class="work-experiense-company">
+                Senior Sales Specialist / Vedoucí prodejny (e-shop)
+                <span class="company-name">Bodymarket.ua</span>
+              </h4>
+              <p class="work-experiense-period">
+                od 08.2018-do 08.2019 | Kiev
+              </p>
+              <ul class="work-experiense-duties-list">
+                <li>Organizace každodenního provozu internetového obchodu</li>
+                <li>Vedení týmu a rozdělování práce</li>
+                <li>Kontrola objednávek a koordinace expedice</li>
+                <li>Komunikace se zákazníky a dodavateli</li>
+                <li>Řešení reklamací a zákaznických požadavků</li>
+                <li>Optimalizace procesů expedice a balení</li>
+                <li>Kontrola kvality služeb a spokojenosti zákazníků</li>
+                <li>Zajištění plynulého chodu provozu</li>
+              </ul>
+            </div>
+
+            <!-- Coca-Cola -->
+            <div class="work-experiense-container">
+              <h4 class="work-experiense-company">
+                Senior Sales Specialist
+                <span class="company-name">Coca-Cola</span>
+              </h4>
+              <p class="work-experiense-period">
+                03/2013 - 08/2018 | Kiev
+              </p>
+              <ul class="work-experiense-duties-list">
+                <li>Zodpovědnost za prodejní výsledky v regionu</li>
+                <li>Péče o zákazníky a rozvoj obchodních vztahů</li>
+                <li>Plánování a realizace prodejních aktivit</li>
+                <li>Práce se systémem SAP</li>
+                <li>Analýza prodejních dat a reporting</li>
+                <li>Spolupráce s obchodními partnery</li>
+                <li>Řešení obchodních a logistických problémů</li>
+              </ul>
+            </div>
+
+          </div>
+
+          <!-- EDUCATION -->
+          <div class="education-container">
+            <h3 class="education-title">Education</h3>
+            <p class="education-university">East European University</p>
+            <p class="education-faculty">
+              Vysokoškolské vzdělání – Tourism and Hotel & Restaurant Business
+            </p>
+            <p class="education-period">
+              09/2008 - 06/2012
+            </p>
+          </div>
+
+        </div>
+
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+          <img src="img/Roman.jpg" alt="My foto" width="370" />
+
+          <div class="sidebar-content">
+
+            <!-- CONTACT -->
+            <div class="contacts-conteiner">
+              <h3 class="contacts-title">Contacts</h3>
+              <p>+420 775 230 185</p>
+              <p>r.mazuraka@gmail.com</p>
+            </div>
+
+            <!-- TECH -->
+            <div class="skills-conteiner">
+              <h3 class="skills-title">Tech Skills</h3>
+              <ul class="skills-list">
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>Git</li>
+                <li>Webpack</li>
+                <li>JavaScript</li>
+                <li>QAD (Green QAD)</li>
+                <li>Microsoft Office (Excel, Outlook, Teams)</li>
+              </ul>
+            </div>
+
+            <!-- SOFT -->
+            <div class="soft-conteiner">
+              <h3 class="soft-title">Soft Skills</h3>
+              <ul class="soft-list">
+                <li>Vedení týmu</li>
+                <li>Organizace práce</li>
+                <li>Řízení směny</li>
+                <li>Komunikace</li>
+                <li>Řešení problémů</li>
+                <li>Teamwork</li>
+              </ul>
+            </div>
+
+          </div>
+        </aside>
+
+      </div>
+    </div>
+  </body>
+</html>
